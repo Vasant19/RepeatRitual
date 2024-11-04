@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 
+<div class="relative font-[sans-serif] w-max mx-auto">
+      <button type="button" id="dropdownToggle"
+        class="px-5 py-2.5 rounded text-white text-sm font-semibold tracking-wide border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
+        Dropdown Menu with Input
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-3 fill-white inline ml-3" viewBox="0 0 24 24">
+          <path fill-rule="evenodd"
+            d="M11.99997 18.1669a2.38 2.38 0 0 1-1.68266-.69733l-9.52-9.52a2.38 2.38 0 1 1 3.36532-3.36532l7.83734 7.83734 7.83734-7.83734a2.38 2.38 0 1 1 3.36532 3.36532l-9.52 9.52a2.38 2.38 0 0 1-1.68266.69734z"
+            clip-rule="evenodd" data-original="#000000" />
+        </svg>
+      </button>
+
+      <ul id="dropdownMenu" class='absolute block shadow-lg bg-white py-2 px-2 z-[1000] min-w-full w-max rounded max-h-96 overflow-auto'>
+        <li class="mb-2">
+          <input placeholder="Search here"
+            class="px-4 py-2.5 w-full rounded text-gray-800 text-sm border-none outline-blue-600 bg-blue-50 focus:bg-transparent" />
+        </li>
+        <li class='py-2.5 px-4 hover:bg-blue-50 text-black text-sm cursor-pointer rounded'>Dropdown option</li>
+        <li class='py-2.5 px-4 hover:bg-blue-50 text-black text-sm cursor-pointer rounded'>Cloth set</li>
+        <li class='py-2.5 px-4 hover:bg-blue-50 text-black text-sm cursor-pointer rounded'>Sales details</li>
+        <li class='py-2.5 px-4 hover:bg-blue-50 text-black text-sm cursor-pointer rounded'>Marketing</li>
+      </ul>
+    </div>
+/* Custom button styles */
+.btn-blue {
+  @apply px-5 py-2.5 rounded-lg text-white text-sm tracking-wider font-medium border border-current outline-none bg-gradient-to-tr from-blue-700 to-blue-300 hover:bg-gradient-to-tl;
+}
 :root {
     color-scheme: light dark;
   }
